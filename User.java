@@ -26,6 +26,10 @@ public class User {
         System.out.println("phone :");
         String mobNumber = sc.nextLine();
         System.out.println((Pattern.matches("91+[\\s][1-9]{10}", mobNumber)));
+
+        System.out.println("phone :");
+        String password = sc.nextLine();
+        System.out.println((Pattern.matches("[A-Za-z]{8,}", password))); // matching password with minimum 8 characters
     }
 
     public static void main(String[] args) {
