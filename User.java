@@ -22,6 +22,10 @@ public class User {
         System.out.println("Email :");
         String email = sc.nextLine();
         System.out.println((Pattern.matches("[a-zA-Z0-9_.-]+@+[a-zA-Z0-9.-]+com", email)));
+
+        System.out.println("phone :");
+        String mobNumber = sc.nextLine();
+        System.out.println((Pattern.matches("91+[\\s][1-9]{10}", mobNumber)));
     }
 
     public static void main(String[] args) {
