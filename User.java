@@ -14,6 +14,11 @@ public class User {
         System.out.println("First Name :");
         String firstName = sc.nextLine();
         System.out.println((Pattern.matches("^[A-Za-z]\\w{3,}", firstName)));
+
+        System.out.println("Last Name :");
+        String lastName = sc.nextLine();
+        System.out.println((Pattern.matches("^[A-Za-z]\\w{3,}", lastName)));
+
     }
 
     public static void main(String[] args) {
