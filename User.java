@@ -27,9 +27,9 @@ public class User {
         String mobNumber = sc.nextLine();
         System.out.println((Pattern.matches("91+[\\s][1-9]{10}", mobNumber)));
 
-        System.out.println("phone :");
+        System.out.println("password :");
         String password = sc.nextLine();
-        System.out.println((Pattern.matches("[A-Za-z]{8,}", password))); // matching password with minimum 8 characters
+        System.out.println((Pattern.matches("[A-Z]+[A-Za-z]{8,}", password))); // matching password with at least one capital letter
     }
 
     public static void main(String[] args) {
