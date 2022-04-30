@@ -29,7 +29,7 @@ public class User {
 
         System.out.println("password :");
         String password = sc.nextLine();
-        System.out.println((Pattern.matches("[A-Z]+[A-Za-z]{8,}", password))); // matching password with at least one capital letter
+        System.out.println((Pattern.matches("[A-Z]+[0-9]+[A-Za-z]{8,}", password))); // matching password with at least one numeric number in password
     }
 
     public static void main(String[] args) {
